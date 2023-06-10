@@ -14,6 +14,7 @@ Created on Sat Jul  2 18:21:01 2022
 # subjects=['math','english','arabic','physics','chemistry']
 # df=pd.DataFrame(degrees,index= stu_name,columns=subjects)
 # print(df)
+
 # import pandas as pd
 # x=pd.Series({'amr':30,'hossam':70,'amir':55,'mody':70})
 # y=pd.Series({'amr':38,'hossam':90,'amir':95,'mody':70})
@@ -31,9 +32,11 @@ Created on Sat Jul  2 18:21:01 2022
 # print(df.loc['amr':'hossam','math'])'
 # print(df.sort_values('math',ascending=(False)))
 import pandas as pd
+
 def df(ind,cols):
     data={c:[str(c)+str(i)for i in ind]for c in cols}
     a=pd.DataFrame(data,ind)
     return a
+
 print(df(range(3),'abc'))
     
